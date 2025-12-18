@@ -1,0 +1,86 @@
+/* SEÇÃO ABORDAGEM */
+.approach {
+  padding: 120px 24px;
+  background: linear-gradient(180deg, #0f1025, #151528);
+  color: #ffffff;
+  text-align: center;
+}
+
+/* TÍTULO */
+.approach h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 70px;
+}
+
+/* CONTAINER DOS PASSOS */
+.approach__steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* STEP */
+.step {
+  position: relative;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 48px 32px 36px;
+  text-align: left;
+  transition: all 0.35s ease;
+  backdrop-filter: blur(10px);
+}
+
+/* HOVER */
+.step:hover {
+  transform: translateY(-10px);
+  border-color: rgba(95, 124, 255, 0.5);
+  box-shadow: 0 25px 60px rgba(95, 124, 255, 0.18);
+}
+
+/* NÚMERO */
+.step span {
+  position: absolute;
+  top: -22px;
+  left: 28px;
+  background: linear-gradient(135deg, #5f7cff, #7a92ff);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 999px;
+  box-shadow: 0 10px 30px rgba(95, 124, 255, 0.35);
+}
+
+/* TÍTULO DO STEP */
+.step h3 {
+  margin-top: 24px;
+  margin-bottom: 14px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+/* TEXTO */
+.step p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #c7c9ff;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .approach {
+    padding: 90px 20px;
+  }
+
+  .approach h2 {
+    font-size: 30px;
+  }
+
+  .step {
+    padding: 44px 28px 32px;
+  }
+}
